@@ -54,7 +54,8 @@ body {
 	padding: 10px;
 }
 .carousel{
- background: #512Da8;	
+ background: #512Da8;
+ margin: 30px;	
 }
 
 .carousel-item{
@@ -65,6 +66,12 @@ body {
 	top: 0;
 	left: 0;	
 	min-height: 300px;
+}
+
+#carouselButton{
+	right: 0px;
+	position: absolute;
+	bottom: 0px;
 }
 
 
