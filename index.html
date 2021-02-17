@@ -34,7 +34,7 @@
             
            </ul>
            <span class="navbar-text">
-               <a data-toggle="modal" data-target="#loginModal">
+               <a id="loginbtn">
                    <span class="fa fa-sign-in" ></span>Login
                </a>
            </span>
@@ -74,7 +74,7 @@
                     </div>
                     <div class="form-row">
                         <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                        <button type="submit" class="btn btn-secondary btn-sm ml-1" data-dismiss=>Sign in</button>
+                        <button type="submit" class="btn btn-primary btn-sm ml-1" data-dismiss=>Sign in</button>
                     </div>
                 </form>
              </div>
@@ -180,8 +180,9 @@
                 </div>
 
                 <div class="col-12 col-sm-3 align-self-center">
-                    <button type="button" class="btn topbtn">
-                        <a role="button" class="btn btn-block nav-link btn-warning"data-toggle="modal" data-target="#reservationModal">Reserve Table</a>
+                    <!-- reserve a table btn -->
+                    <button type="button" class="btn btn-warning" >
+                        <a role="button"  id="reservebtn">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -352,6 +353,14 @@
                 }
             });
         
+     });
+
+     $('#loginbtn').click(function(){
+         $('#loginModal').modal('show');
+     });
+
+     $('#reservebtn').click(function(){
+         $('#reservationModal').modal('show');
      });
     </script>
 </body>
